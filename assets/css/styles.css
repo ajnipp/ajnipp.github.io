@@ -257,8 +257,10 @@ nav ul li {
 
 .contact-form-container .input-field {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
   border-radius: 5px;
   border: none;
   border: 2px solid var(--primary-color);
@@ -267,7 +269,6 @@ nav ul li {
 }
 
 .input-field::placeholder {
-  padding: 0.5rem;
   color: var(--primary-color);
 }
 
