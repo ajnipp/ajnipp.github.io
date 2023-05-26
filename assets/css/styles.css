@@ -96,14 +96,28 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 5.5rem;
   max-width: 68.75rem;
   margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
-
-.hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+.circular-landscape { 
+  /* display: inline-block;  */
+  /* position: relative;  */
+  width: 37.5rem; 
+  height: 37.5rem; 
+  min-width: 37.5rem; 
+  min-height: 37.5rem; 
+  overflow: hidden; 
+  border-radius: 50%; 
+  text-align: center;
+} 
+.circular-landscape img { 
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+  transform: translateX(-13%);
 }
 
 .bio {
@@ -308,6 +322,12 @@ footer {
 
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
+  .circular-landscape { 
+    min-width: 16rem; 
+    min-height: 16rem;
+    width: 16rem; 
+    height: 16rem; 
+  }
   nav {
     padding: 1.5rem 1rem;
   }
@@ -352,11 +372,6 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
-  }
-
   .bio {
     width: 18.3rem;
   }
